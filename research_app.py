@@ -1,6 +1,6 @@
 import streamlit as st
 import datetime
-from app.research_backend import research_company
+from research_backend import research_company
 
 # Initialize session state
 if 'research_complete' not in st.session_state:
