@@ -11,7 +11,7 @@ load_dotenv()
 client_id = os.getenv('CLIENT_ID')
 client_secret = os.getenv('CLIENT_SECRET')
 
-url = "https://id.cisco.com/oauth2/default/v1/token"
+url = "oauth url"
 
 def get_access_token():
     """Get access token using client credentials."""
