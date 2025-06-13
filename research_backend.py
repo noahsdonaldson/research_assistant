@@ -3,7 +3,7 @@ import time
 import re
 from dotenv import load_dotenv
 from openai import AzureOpenAI
-from app.auth import get_access_token
+from auth import get_access_token
 from tavily import TavilyClient
 
 load_dotenv()
@@ -14,7 +14,7 @@ def initialize_clients():
         api_key = get_access_token()
         tavily_api_key = os.getenv('TAVILY_API_KEY')
         client = AzureOpenAI(
-            azure_endpoint='https://chat-ai.cisco.com',
+            azure_endpoint='endpoint url',
             api_key=api_key,
             api_version="2024-08-01-preview"
         )
